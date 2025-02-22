@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF…ELSE & ELSE IF STATEMENT,
+        TESTING SET OF CONDITIONS</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1. Write a program that takes a character (number or string)
+        // in a variable & checks whether the given input is a number, 
+        // uppercase letter or lower case letter.
+        //  (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
+
+        var input_char = prompt(`enter the character `);
+        
+        if((input_char >= 'a') && ( input_char <='z') ){
+            alert("this is a lowercase");
+        }
+
+        else if((input_char >= 'A') && ( input_char <='Z')){
+            alert("this is a Uppercase");
+        }
+
+        else {
+            alert("this is a Number or Special Character ");
+        
+        }
+
+
+
+            // 2. Write a JavaScript program that accept two integers and
+            // display the larger. Also show if the two integers are equal.
+
+         var input_one = +prompt(`enter the number one`);
+         var input_two = +prompt(`enter the number two`);
+
+         max_number = Math.max(input_one , input_two);
+         alert(max_number);
+         if(input_one === input_two){
+         alert(`${input_one} == ${input_two} both integers are equal.` );
+        }
+ 
+
+
+        // 3. Write a program that takes input a number from user &
+        // state whether the number is positive, negative or zero.
+
+        var input_number = +prompt(`enter the number to check ( positive, negative or zero)`);
+        if( input_number < 0 ){
+            alert(` ${input_number} the number is negative `);
+        }
+        else if(input_number === 0){
+            
+            alert(`${input_number} the number is Zero `);
+        }
+        else{
+            alert(`${input_number} the number is positive `);
+        }
+
+
+        // 4. Write a program that takes a character (i.e. string of
+        // length 1) and returns true if it is a vowel, false otherwise
+
+        var vowel_key =  prompt(`enter the character vowel or not`);
+        if((vowel_key === 'a')&&( vowel_key === 'e') && (vowel_key === 'i') && (vowel_key === 'o') && (vowel_key === 'u') ){
+            alert("this character is a Vowel");
+        }
+        else{
+            alert("this character is not a Vowel");
+
+        }
+
+        //  5. Write a program that
+        // a. Store correct password in a JS variable.
+        // b. Asks user to enter his/her password
+        // c. Validate the two passwords:
+        // i. Check if user has entered password. If not, then give message
+        //  “ Please enter your password”
+        // ii. Check if both passwords are same. If they are same, show message 
+        // “Correct! The password you entered matches the original password”. Show
+        // “Incorrect password” otherwise.
+
+        var user_password = "Subhan123";
+        var user_passipnut = prompt(`Please enter your password`);
+
+        if(user_passipnut == user_password){
+            alert(`Correct! The password you entered matches the original password `);
+        }
+        else if(user_passipnut != user_password){
+            alert(`Incorrect password `);
+        }
+        else{
+        alert(" enter your password");
+        }
+
+
+        // 6. This if/else statement does not work. Try to fix it:
+            var greeting;
+            var hour = 13;
+            if (hour < 18) {
+            greeting = "Good day";
+            }
+            else{
+            greeting = "Good evening";
+            }
+
+
+        // 7. Write a program that takes time as input from user in 24
+        // hours clock format like: 1900 = 7pm. Implement the
+        // following case using if, else & else if statements
+
+        var fixed_time = 1900;
+       var time_ipnut = +prompt(`Please enter your time`);
+
+        
+        if((time_ipnut >= '0000') && ( time_ipnut <'1200') ){
+            alert("Good Morning!");
+        }
+        else if((time_ipnut >= '1200') && ( time_ipnut <'1700') ){
+            alert("Good Afternoon!");
+        }
+        else if((time_ipnut >= '2300') && ( time_ipnut <='2359') ){
+            alert("Good Night!");
+        }
+        else{
+            alert('you entered a wrong time');
+        }
+    </script>
+</body>
+</html>
