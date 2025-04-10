@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS chapters14-16</title>
+</head>
+<body>
+    <script>
+        // // 1. Declare an empty array using JS literal notation to store student names in future.
+        // let stdNamesLit = [];
+        // // 2. Declare an empty array using JS object notation to store student names in future.
+        // let stdNamesObj = new Array();
+        // // 3. Declare and initialize a strings array.
+        // let strArr = ['Apple', 'Banana', 'Orange','mango'];
+        // // 4. Declare and initialize a numbers array.
+        // let numArr = [10, 20, 30, 40,50];
+
+        // // 5. Declare and initialize a boolean array.
+        // let boolArr = [true, false, true,false];
+
+        // // 6. Declare and initialize a mixed array.
+        // let mixedArr = ['John', 25, true, 'Teacher',null];
+
+        // // 7. Declare and Initialize an array and store available education qualifications in Pakistan
+        // // (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD).
+        // let eduQualifications = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil.', 'PhD'];
+
+
+        // // // Show the listed qualifications in your browser like:
+        // document.write(`<h1>Qualifications</h1>`)
+        // for(let i = 0 ; i< eduQualifications.length; i++ ){
+        //     document.write(`${i}) ${eduQualifications[i]} <br>`)
+        // }
+
+        // 8. Write a program to store 3 student names in an array.Take
+        //     another array to store score of these three students.
+        //     Assume that total marks are 500 for each student, display
+        //     the scores & percentages of students like:
+
+    //     let stdNames = ['Rafay', 'Ali', 'Noman'];
+    //     let stdScores = [40, 80, 70]; 
+
+    // for (let i = 0; i < stdNames.length; i++) {
+
+    //         let percentage = Math.floor((stdScores[i] / 500) * 100)
+    //         document.write(`${stdNames[i]} Score: ${stdScores[i]} / 500 Percentage: ${percentage} <br>`);
+    //     }
+
+
+    // 9. Initialize an array with color names. Display the array elements in your browser.
+    //     a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array. Display the updated array in your browser.
+    //     b. Ask the user what color he/she wants to add to the end & add that color to the end of the array. Display the updated array in your browser.
+    //     c. Add two more color to the beginning of the array. Display the updated array in your browser.
+    //     d. Delete the first color in the array. Display the updated array in your browser.
+    //     e. Delete the last color in the array. Display the updated array in your browser.
+    //     f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired
+    //     position/index. . Display the updated array in your browser. g. Ask the user at which index he/she wants to delete
+    //     color(s) & how many colors he/she wants to delete. Then remove the same number of color(s) from user-defined
+    //     position/index. . Display the updated array in your browser.
+
+    //  let colors = ['Red', 'Blue', 'Green', 'Yellow'];
+
+    //     document.write(`<p>Initial colors array: ${colors}</p><br>`);
+
+    //     let colorAdd_Start = prompt('What color do you want to add to the beginning of the array?');
+    //     colors.unshift(colorAdd_Start);
+    //     document.write(`<p>Array after adding color to the beginning: ${colors}</p><br>`);
+
+    //     let colorAddEnd = prompt('What color do you want to add to the end of the array?');
+    //     colors.push(colorAddEnd);
+    //     document.write(`<p>Array after adding color to the end: ${colors}</p><br>`);
+
+    //     let colorAdd1_start = prompt('What is the first color you want to add to the beginning?');
+    //     let colorAdd2_start = prompt('What is the second color you want to add to the beginning?');
+    //     colors.unshift(colorAdd1_start, colorAdd2_start);
+    //     document.write(`<p>Array after adding two more colors to the beginning: ${colors}</p><br>`);
+
+    //     colors.shift();
+    //     document.write(`<p>Array after deleting the first color: ${colors}</p><br>`);
+
+    //     colors.pop();
+    //     document.write(`<p>Array after deleting the last color: ${colors}</p><br>`);
+
+    //     let indexAdd = parseInt(prompt('At which index do you want to add a color?'));
+    //     let colorAdd = prompt('What color do you want to add?');
+    //     colors.splice(indexAdd, 0, colorAdd);
+    //     document.write(`<p>Array after adding a color at index ${indexAdd}: ${colors}</p><br>`);
+
+    //     let indexDelete = parseInt(prompt('At which index do you want to delete colors?'));
+    //     let numDelete = parseInt(prompt('How many colors do you want to delete?'));
+    //     colors.splice(indexDelete, numDelete);
+    //     document.write(`<p>Array after deleting colors starting from index ${indexDelete}: ${colors}</p><br>`);
+
+
+    // 10. Write a program to store student scores in an array &
+    // sort the array in ascending order using Array’s sort
+    // method.
+
+    //  let std_Scores = [320, 230, 480, 120];
+    // document.write(`<p>Original Scores: ${std_Scores}</p>`);
+
+    // std_Scores.sort();
+    // document.write(`<p>Sorted Scores Ascending Order: ${std_Scores}</p><br>`);
+    
+    // 11. Write a program to initialize an array with city names.
+    //     Copy 3 array elements from cities array to selectedCities array.
+
+        // let cities = ['Quetta', 'Lahore', 'Sukkur', 'Karachi', 'Islamabad'];
+        // document.write(`<h2> Cities List: ${cities}</h2>`);
+        // document.write(`<p>Original Cities: ${cities}</p>`);
+
+        // let selectedCities = cities.slice(0, 3);
+        // document.write(`<h2> Selected Cities List: ${cities}</h2>`);
+        //  document.write(`<p>Selected Cities: ${selectedCities}</p><br>`);
+
+    //    12. Write a program to create a single string from the below mentioned array:
+    //     var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+    //     (Use array’s join method)
+
+    // let arr = ['This ', ' is ', ' my ', ' cat'];
+//     document.write(`<h2>Array</h2>`)
+//     document.write(arr)
+
+
+//    let arr_join = arr.join('')
+//     document.write(`<h2>String</h2>`)
+//     document.write(arr_join)
+
+        // 13. Create a new array. Store values one by one in such a way
+        // that you can access the values in the order in which they
+        // were stored. (FIFO-First In First Out)
+        
+        // let arr = [];
+
+        // arr.unshift('Keyboard');         
+        // arr.unshift('Mouse'); 
+        // arr.unshift('Printer'); 
+        // arr.unshift('Monitor'); 
+
+        // document.write(`<h3>Devices: <br> ${arr}</h3><br>`);
+ 
+        // let first_Out = arr.shift();  
+        // let second_Out = arr.shift();
+        // let third_Out = arr.shift();
+        // let last_Out = arr.shift();
+
+        // // 5. Display the elements that were removed
+        // document.write(`
+        // <p><h3>Out: <br> ${first_Out}<br>
+        //     <h3>Out: <br> ${second_Out} <br>
+        //     <h3>Out: <br> ${third_Out} <br>
+        //     <h3>Out: <br> ${last_Out}</p>`);
+
+
+        // 14. Create a new array. Store values one by one in such a way
+        // that you can access the values in reverse order. (Last InFirst Out)
+
+          // let arr = [];
+
+        // arr.push('Keyboard');         
+        // arr.push('Mouse'); 
+        // arr.push('Printer'); 
+        // arr.push('Monitor'); 
+
+        // document.write(`<h3>Devices: <br> ${arr}</h3><br>`);
+ 
+        // let first_Out  = arr.pop();  
+        // let second_Out = arr.pop();
+        // let third_Out  = arr.pop();
+        // let last_Out   = arr.pop();
+
+        // // 5. Display the elements that were removed
+        // document.write(`
+        // <p><h3>Out: <br> ${first_Out}<br>
+        //     <h3>Out: <br> ${second_Out} <br>
+        //     <h3>Out: <br> ${third_Out} <br>
+        //     <h3>Out: <br> ${last_Out}</p>`);
+
+
+            // 15. Write a program to store phone manufacturers (Apple,
+            // Samsung, Motorola, Nokia, Sony & Haier) in an array.
+            // Display the following dropdown/select menu in your
+            // browser using document.write() method:
+
+        //     let phone_Manufact = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+        //     document.write('<select>');
+
+        //    for (let i = 0; i < phone_Manufact.length; i++) {
+        //         document.write(`<option> ${phone_Manufact[i]}</option>`);
+        //     }
+
+        //    document.write('</select>');
+
+    </script>
+</body>
+</html>

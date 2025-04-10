@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH EXPRESSIONS - chapters6-9</title>
+</head>
+<body>
+  <script>
+
+    // 1. Write a program to take a number in a variable, do the
+    // required arithmetic to display the following result in your browser:
+
+    // let a = 10;
+    // document.write(` Result :<br> The value of a is ${a} <br> ............................................ <br>`)
+
+//    increment
+    // a = ++a;
+    // document.write(` <br> The value of ++a is :  ${a} <br>  Now the value of a is : ${a} <br> `)
+    
+   
+    // document.write(` <br> The value of a++ is :  ${a} <br>`)
+    // a++;
+    // document.write(`  Now the value of a is : ${a} <br> `)
+    
+    // // decrement
+    // a = --a;
+    // document.write(` <br> The value of --a is :  ${a} <br>  Now the value of a is : ${a} <br> `)
+    
+   
+    // document.write(` <br> The value of a-- is :  ${a} <br>`)
+    // a--;
+    // document.write(`  Now the value of a is : ${a} <br> `)
+    
+
+    // 2. What will be the output in variables a, b & result after
+    //     execution of the following script:
+        // var a = 2,  b = 1;
+        // var result = --a - --b + ++b + b--;
+        // Explain the output at each stage:
+        // --a;
+    //  pre-derement value of a is 1
+
+        //  --a - --b; (1 - 0)
+    //  pre-derement value of a is 1 
+
+        // --a - --b + ++b; ( 1 - 0 + 1)
+    //  pre-derement value of a is 2
+
+        // final result is 
+        // --a - --b + ++b + b--; ( 2 + 1)
+    //  pre-derement,pre-increment & postdecrement value is 3 
+
+
+    
+    // document.write(` <br> a is :  ${a} <br> b is :  ${b} <br> Result is : ${result} <br> `)
+        // console.log(result)
+
+
+    // 3. Write a program that takes input a name from user & greet the user.
+
+    // username = prompt(` enter the name`)
+
+    // alert(`Greet ${username}`)
+
+
+    // 5. Write a program to take input a number from user &
+    // display it’s multiplication table on your browser. If user
+    // does not enter a new number, multiplication table of 5
+    // should be displayed by default.
+
+    // userInputNum = +prompt(` enter the number`, 5)
+    // document.write(`<h2>Multiplication Table of ${userInputNum} </h2>`);
+    // for (let i = 1; i <= 10; i++) {
+    // document.write(`${userInputNum} x  ${i}  = ${userInputNum * i} <br>`);
+    // }
+
+
+
+    // 6. Take
+    //     a) Take three subjects name from user and store them in 3
+    //     different variables.
+    //     b) Total marks for each subject is 100, store it in another
+    //     variable.
+    //     c) Take obtained marks for first subject from user and
+    //     stored it in different variable.
+    //     ALERTS | JAVASCRIPT
+    //     Page 3 of 3
+    //     d) Take obtained marks for remaining 2 subjects from user
+    //     and store them in variables.
+    //     e) Now calculate total marks and percentage and show the
+    //     result in browser like this.(Hint: user table)
+
+
+        // let sub1 = prompt("Enter first subject name:");
+        // let sub2 = prompt("Enter second subject name:");
+        // let sub3 = prompt("Enter third subject name:");
+        // let totalMarks = 100; 
+        // let obtained_1num = Number(prompt(`Enter obtained marks for ${sub1}`));
+        // let obtained_2num = Number(prompt(`Enter obtained marks for ${sub2}`), obtained_3num = prompt(`Enter obtained marks for ${sub3}`));
+
+        // let Obtained_marks = obtained_1num + obtained_2num + obtained_3num ;
+        // let percentage = Math.floor(Obtained_marks / (totalMarks * 3) * 100);
+        
+        // document.write(`<table><tr><th>Subject</th> <th>Total Marks</th> <th>Obtained</th> <th>Percentage</th></tr>
+        // <tr><td> ${sub1} </td><td>100</td><td> ${obtained_1num} </td> <td> ${obtained_1num / 100 * 100} </td></tr> 
+        // <tr><td> ${sub2} </td><td>100</td><td> ${obtained_2num} </td> <td> ${obtained_2num / 100 * 100} </td></tr> 
+        // <tr><td> ${sub3} </td><td>100</td><td> ${obtained_3num} </td> <td> ${obtained_3num / 100 * 100} </td></tr>
+        // <tr><td>  </td><td></td><td>  </td> <td>  </td></tr>
+        // <tr><td>  </td><td>${totalMarks * 3}</td><td> ${Obtained_marks} </td> <td> ${percentage} </td></tr> <br>
+        // </table>`);
+  </script>
+    
+</body>
+</html>
