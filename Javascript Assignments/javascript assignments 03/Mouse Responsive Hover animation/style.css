@@ -1,0 +1,17 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  transition: transform 0.2s ease-out;
+  border-radius: 10px;
+}
